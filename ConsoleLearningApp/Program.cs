@@ -1,4 +1,5 @@
 ﻿using ConsoleLearningApp.DataStructures;
+using ConsoleLearningApp.LanguageTools;
 
 namespace ConsoleLearningApp
 {
@@ -6,17 +7,9 @@ namespace ConsoleLearningApp
     {
         static void Main(string[] args)
         {
-            MyQueue queue = new MyQueue(5);
-
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(4);
-            queue.Enqueue(5);
-            queue.Enqueue(6);
-            queue.Dequeue();
-            queue.Enqueue(7);
-            queue.Enqueue(8);
+            int[] arr = { 12, 32, 421, 21, 3, 41, 21, 512, 213, 55, 25, 20, 24 };
+            Linq linq = new Linq();
+            linq.GetNumbersBiggerThan(arr, 99);
         }
     }
 }
